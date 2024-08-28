@@ -1,0 +1,17 @@
+:root {
+    --box-width: 300px;
+    --box-height: 200px;
+    --box-background-color:green;
+    --box-color:white;
+  }
+  
+  body::before {
+    content: 'box';
+    display: block;
+    width: var(--box-width);
+    height: var(--box-height);
+    background-color: var(--box-background-color);
+    color:var(--box-color);
+    margin: 20px;
+  }
+  
